@@ -1,0 +1,80 @@
+/* ### SETUP ### */
+
+{
+  margin: 10%;
+  padding: 10%;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #5F9EA0;
+}
+
+/* ### CALCULATOR ### */
+
+div.calculator {
+  display: block;
+}
+.calculator {
+  position: relative;
+  display: grid;
+}
+.calculator .result {
+  border-radius: 5px;
+  border-style: inset;
+  grid-column: span 4;
+  height: 100px;
+  text-align: right;
+  outline: none;
+  background: #F0F8FF;
+  padding: 10px;
+  font-size: 18px;
+
+}
+
+/* ### BUTTONS ### */
+
+.calculator span {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  color: white;
+  background: #008B8B;
+  place-items: center;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 5px;
+}
+.calculator span.clear {
+  grid-column: span 2;
+  width: 120px;
+  background: #6495ED;
+  color: #000000;
+}
+.calculator span.plus {
+  grid-row: span 2;
+  height: 120px;
+}
+.calculator span.equal {
+  color: #000000;
+  background: #FFF8DC;
+}
+
+/* ### BUTTON ACTIVATIONS ### */
+
+.calculator span:active {
+  background: #FAEBD7;
+  color: #D2691E;
+}
+.calculator span.clear:active {
+  background: #00008B;
+  color: #ffffff;
+}
+
+.calculator span.equal:active {
+  background: #DEB887;
+}
+
+/* ### END ### */

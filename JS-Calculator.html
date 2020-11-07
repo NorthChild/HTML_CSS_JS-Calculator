@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS - CALCULATOR</title>
+
+    <link rel="stylesheet" href="CSS/calculator.css">
+    <script src="JS/calculator.js"></script>
+  </head>
+
+  <body>
+
+    <div class="calculator">
+      <form class="calculator" action="index.html" method="post" name="calc">
+        <input type="text" name="data" value="" readonly="" class="result">
+        <span class="num clear" onclick="document.calc.data.value = ''"> <b>DEL</b> </span>
+        <span class="num" onclick="document.calc.data.value += '/'"> / </span>
+        <span class="num" onclick="document.calc.data.value += '*'"> * </span>
+        <span class="num" onclick="document.calc.data.value += '7'"> 7 </span>
+        <span class="num" onclick="document.calc.data.value += '8'"> 8 </span>
+        <span class="num" onclick="document.calc.data.value += '9'"> 9 </span>
+        <span class="num" onclick="document.calc.data.value += '-'"> - </span>
+        <span class="num" onclick="document.calc.data.value += '4'"> 4 </span>
+        <span class="num" onclick="document.calc.data.value += '5'"> 5 </span>
+        <span class="num" onclick="document.calc.data.value += '6'"> 6 </span>
+        <span class="num plus" onclick="document.calc.data.value += '+'"> + </span>
+        <span class="num" onclick="document.calc.data.value += '3'"> 3 </span>
+        <span class="num" onclick="document.calc.data.value += '2'"> 2 </span>
+        <span class="num" onclick="document.calc.data.value += '1'"> 1 </span>
+        <span class="num" onclick="document.calc.data.value += '0'"> 0 </span>
+        <span class="num" onclick="document.calc.data.value += '00'"> 00 </span>
+        <span class="num" onclick="document.calc.data.value += '.'"> . </span>
+        <span class="num equal" onclick="document.calc.data.value = eval(calc.data.value) "> = </span>
+      </form>
+    </div>
+
+  </body>
+</html>
